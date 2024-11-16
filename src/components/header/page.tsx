@@ -46,7 +46,7 @@ const Header = () => {
           <Link
             key={item.id}
             href={item.href}
-            className="font-bold text-[20px]"
+            className="font-bold text-[20px] hover:text-primary hover:underline transition duration-300"
             prefetch={false}
           >
             {item.text}

@@ -106,8 +106,8 @@ const Features = () => {
         </Swiper>
       </div>
       <div>
-        <button className='pt-[12px] pb-[12px] pl-[26px] pr-[26px] bg-[#AA8262] cursor-pointer text-white outline-none rounded-xl text-[24px]'>
-         All features <strong className='bg-white text-black rounded-full w-[60px] h-[60px]'>30</strong> 
+        <button className='pt-[12px] pb-[12px] pl-[26px] pr-[26px] bg-[#AA8262] mb-[50px] cursor-pointer text-white outline-none rounded-xl text-[24px]'>
+         All features <strong className='bg-white text-black rounded-full w-[60px] h-[60px]'> 30 </strong> 
         </button>
       </div>
     </div>
