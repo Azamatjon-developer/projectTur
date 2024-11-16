@@ -42,7 +42,7 @@ const Page = () => {
       </section>
       <section className="w-full h-screen overflow-y-auto">
         <div className='grid grid-cols-2 container mx-auto mt-[100px]'>
-          <h3 className='col-span-1 text-[40px] font-bold'>Best tours</h3>
+          <h3 className='col-span-1 text-[40px] font-bold l pb-[30px]'>Best tours</h3>
           <p className='col-span-1 text-[16px] font-normal'>
             In each region we've selected and combined the best in one trip:
             sights, equipment, hotels, food and people. These offers will help
