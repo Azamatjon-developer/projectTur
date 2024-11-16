@@ -1,4 +1,5 @@
 'use client'
+import Features from '@/components/features/Features'
 import Header from '@/components/header/page'
 import Slide from '@/components/slide/slide'
 import React from 'react'
@@ -7,7 +8,7 @@ import { FaPlay } from 'react-icons/fa'
 const Page = () => {
   return (
     <main>
-      <section className="flex flex-col text-white relative justify-between h-screen">
+      <section className="flex flex-col text-white  relative justify-between h-screen">
         <video
           src={'/assets/test.mp4'}
           className="absolute -z-10 w-full h-screen object-cover"
@@ -36,23 +37,14 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto bg-white text-black text-center py-5 w-full">
-          <p className="font-bold">best tour</p>
+        <div className="container mx-auto bg-slate-200 text-black text-center py-5 w-full">
+          <p className="font-bold text-[30px]">best tours</p>
         </div>
       </section>
-      <section className="w-full h-screen overflow-y-auto">
-        <div className='grid grid-cols-2 container mx-auto mt-[100px]'>
-          <h3 className='col-span-1 text-[40px] font-bold l pb-[30px]'>Best tours</h3>
-          <p className='col-span-1 text-[16px] font-normal'>
-            In each region we've selected and combined the best in one trip:
-            sights, equipment, hotels, food and people. These offers will help
-            to form an idea about the possibilities of recreation in a
-            particular place. You can make changes to any program.
-          </p>
-        </div>
+      <section className="w-full h-screen   overflow-y-auto">
         <div>
-          <Slide/>
-
+          <Slide />
+          <Features />
         </div>
       </section>
     </main>
