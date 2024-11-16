@@ -43,7 +43,7 @@ const Header = () => {
         <h2 className="text-[48px] font-bold">211</h2>
         <nav className='flex items-center gap-5 text-[20px]'>
           {navbarContext.map((item) => (
-            <Link key={item.id} href={item.href} className='font-bold' prefetch={false}>
+            <Link key={item.id} href={item.href} className='font-bold text-[20px]' prefetch={false}>
               {item.text}
             </Link>
           ))}
