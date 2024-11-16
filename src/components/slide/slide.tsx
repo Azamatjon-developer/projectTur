@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
-import Image from 'next/image';
-import TravelImage1 from '../../../public/assets/images/SlideImage.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import { Navigation } from 'swiper/modules'
+import Image from 'next/image'
+import TravelImage1 from '../../../public/assets/images/SlideImage.jpg'
 
 export default function App() {
   return (
@@ -16,14 +16,15 @@ export default function App() {
           helicopter control. Features make the rest individual.
         </p>
       </div>
-      
-      {/* Custom Navigation Buttons */}
-      <div className="flex gap-5  mb-4">
-        <button className="swiper-button-prev-custom bg-gray-300 py-[10px] px-[20px]  rounded-full shadow-md hover:bg-[#AA8262]">&lt;</button>
-        <button className="swiper-button-next-custom bg-gray-300 py-[10px] px-[20px] rounded-full shadow-md hover:bg-[#AA8262]">&gt;</button>
-      </div>
 
-      {/* Swiper Carousel */}
+      <div className="flex gap-5  mb-4">
+        <button className="swiper-button-prev-custom bg-gray-300 py-[10px] px-[20px]  rounded-full shadow-md hover:bg-[#AA8262]">
+          &lt;
+        </button>
+        <button className="swiper-button-next-custom bg-gray-300 py-[10px] px-[20px] rounded-full shadow-md hover:bg-[#AA8262]">
+          &gt;
+        </button>
+      </div>
       <Swiper
         navigation={{
           nextEl: '.swiper-button-next-custom',
@@ -35,7 +36,9 @@ export default function App() {
         loop={false}
       >
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">Baikal Ice. The Best</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            Baikal Ice. The Best
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 1"
@@ -45,7 +48,9 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">Mountain View</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            Mountain View
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 2"
@@ -55,7 +60,9 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">Beautiful Beach</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            Beautiful Beach
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 3"
@@ -65,7 +72,9 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">City Lights</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            City Lights
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 4"
@@ -75,7 +84,9 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">Peaceful Forest</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            Peaceful Forest
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 5"
@@ -85,7 +96,9 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">Peaceful Forest</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            Peaceful Forest
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 5"
@@ -95,7 +108,9 @@ export default function App() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-[24px] font-medium mb-[20px] text-center">Peaceful Forest</h3>
+          <h3 className="text-[24px] font-medium mb-[20px] text-center">
+            Peaceful Forest
+          </h3>
           <Image
             src={TravelImage1}
             alt="Travel Slide 5"
@@ -106,5 +121,5 @@ export default function App() {
         </SwiperSlide>
       </Swiper>
     </div>
-  );
+  )
 }

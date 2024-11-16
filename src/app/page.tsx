@@ -1,17 +1,17 @@
-"use client"
-import { useState } from 'react';
-import Features from '@/components/features/Features';
-import Footer from '@/components/footer/Footer';
-import Header from '@/components/header/page';
-import Slide from '@/components/slide/slide';
-import React from 'react';
-import { FaPlay } from 'react-icons/fa';
+'use client'
+import { useState } from 'react'
+import Features from '@/components/features/Features'
+import Footer from '@/components/footer/Footer'
+import Header from '@/components/header/page'
+import Slide from '@/components/slide/slide'
+import React from 'react'
+import { FaPlay } from 'react-icons/fa'
 
 const Page = () => {
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(false)
   const handlePlayClick = () => {
-    setShowVideo(true);
-  };
+    setShowVideo(true)
+  }
 
   return (
     <main>
@@ -27,10 +27,10 @@ const Page = () => {
         <Header />
         <div className="container mx-auto grid grid-cols-2 place-items-center">
           <div className="col-span-1 flex flex-col gap-10">
-            <h2 className="text-[28px]">
+            <h2 className="text-[48px] font-bold w-[400px]">
               Personal adventures around the world
             </h2>
-            <p>
+            <p className="text-[18px] text-white font-medium">
               We build the route so that in a week we can show the most
               interesting places in the region. We include only the best in our
               program: accommodation, transportation, food, people and
@@ -39,8 +39,8 @@ const Page = () => {
             </p>
           </div>
           <div className="col-span-1">
-            <div 
-              onClick={handlePlayClick} 
+            <div
+              onClick={handlePlayClick}
               className="size-[100px] flex items-center justify-center rounded-full bg-black/20 border-4 hover:border-transparent hover:bg-white duration-300 cursor-pointer border-gray-500"
             >
               <FaPlay className="text-[30px] text-primary" />
@@ -53,7 +53,7 @@ const Page = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your video ID
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -80,7 +80,7 @@ const Page = () => {
         <Footer />
       </section>
     </main>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
