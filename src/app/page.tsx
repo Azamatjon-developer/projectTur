@@ -1,5 +1,6 @@
 'use client'
 import Features from '@/components/features/Features'
+import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/page'
 import Slide from '@/components/slide/slide'
 import React from 'react'
@@ -46,6 +47,7 @@ const Page = () => {
           <Slide />
           <Features />
         </div>
+        <Footer/>
       </section>
     </main>
   )
