@@ -5,9 +5,9 @@ import { Navigation } from 'swiper/modules'
 import Image from 'next/image'
 import TravelImage1 from '../../../public/assets/images/SlideImage.jpg'
 
-export default function App() {
+export default function Slide() {
   return (
-    <div className="container mx-auto mt-24">
+    <div id='nextSc' className="container mx-auto mt-24">
       <div className="grid grid-cols-2 mb-8">
         <h3 className="text-[48px] font-bold">Best Tours </h3>
         <p className="w-[400px] text-[16px] text-slate-500">
